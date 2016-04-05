@@ -1,6 +1,19 @@
-<html>
-<head></head>
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
 <body>
-<h3>Heading 3</h3>
+    <!--<h1>{{6+3}}</h1>-->
+    
+        <a href="#/">Home</a>
+        <a href="#/blog">Blog</a>
+        <a href="#/about">About</a>   
+     <div ng-view class="myview"></div>
+
+    <script type="text/javascript" src="App/App.js"></script>
 </body>
 </html>
